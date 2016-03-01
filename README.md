@@ -11,6 +11,6 @@ This script mounts you with a Spectral tiger when you're dead. When you've reach
 4. Use CMake (Configure and Generate) then re-compile.
 
 # Screen Shots
-http://postimg.org/image/46mky5nn9/
+![alt tag](http://s12.postimg.org/kum7qysot/ghost_ground_mount.jpg)
 
-[img]http://s18.postimg.org/46mky5nnd/ghost_flying_mount.jpg[/img]
+![alt tag](http://s18.postimg.org/46mky5nnd/ghost_flying_mount.jpg)
