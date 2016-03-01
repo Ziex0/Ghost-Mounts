@@ -4,9 +4,9 @@ Core modification for TrinityCore, Tested on 3.3.5 branch.
 # About
 There are 2 different patches
 
-1. ghost_ground_mount.patch which mounts you with a Swift Spectral Tiger (http://www.wowhead.com/npc=24004/swift-spectral-tiger)
+1st patch - ghost_ground_mount which mounts you with a Swift Spectral Tiger when you're dead (http://www.wowhead.com/npc=24004/swift-spectral-tiger)
 
-2. ghost_flying_mount.patch which mounts you with a Winged Steed of the Ebon Blade (http://www.wowhead.com/npc=29582/winged-steed-of-the-ebon-blade)
+2nd patch - ghost_flying_mount which mounts you with a Winged Steed of the Ebon Blade (http://www.wowhead.com/npc=29582/win...the-ebon-blade)
 
 Note that upon resurrection you'll be back to normal speed, dismounted and flying state disabled.
 
