@@ -25,7 +25,7 @@ index f3d45b0..c29fb3b 100644
 +	//dismount upon resurrection
 +	SetUInt32Value(UNIT_FIELD_MOUNTDISPLAYID, 0);
 +	//disable flight
-+	SetCanFly(false);
++	SetCanFly(false, true);
  
      m_deathTimer = 0;
  
