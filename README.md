@@ -2,7 +2,9 @@
 Core modification for TrinityCore, Tested on 3.3.5 branch.
 
 # About
-There are 2 different patches
+These are Core Modification Scripts that allows players to mount when they're dead.
+
+I made two different patches:
 
 1st patch - ghost_ground_mount which mounts you with a Swift Spectral Tiger when you're dead (http://www.wowhead.com/npc=24004/swift-spectral-tiger)
 
