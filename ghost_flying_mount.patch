@@ -1,0 +1,31 @@
+diff --git a/src/server/game/Entities/Player/Player.cpp b/src/server/game/Entities/Player/Player.cpp
+index f3d45b0..c29fb3b 100644
+--- a/src/server/game/Entities/Player/Player.cpp
++++ b/src/server/game/Entities/Player/Player.cpp
+@@ -4652,6 +4652,14 @@ void Player::BuildPlayerRepop()
+     SetMovement(MOVE_WATER_WALK);
+     if (!GetSession()->isLogingOut())
+         SetMovement(MOVE_UNROOT);
++	
++	// Ghost Flying Mount
++#define GhostMount_DisplayId	28108 //Winged Steed of the Ebon Blade
++
++	SetUInt32Value(UNIT_FIELD_MOUNTDISPLAYID, GhostMount_DisplayId);
++	SetSpeed(MOVE_RUN, 2.0f, true);
++	SetCanFly(true);
++	SetSpeed(MOVE_FLIGHT, 2.5f, true);
+ 
+     // BG - remove insignia related
+     RemoveFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_SKINNABLE);
+@@ -4696,6 +4704,11 @@ void Player::ResurrectPlayer(float restore_percent, bool applySickness)
+ 
+     SetMovement(MOVE_LAND_WALK);
+     SetMovement(MOVE_UNROOT);
++	
++	//dismount upon resurrection
++	SetUInt32Value(UNIT_FIELD_MOUNTDISPLAYID, 0);
++	//disable flight
++	SetCanFly(false);
+ 
+     m_deathTimer = 0;
+ 
