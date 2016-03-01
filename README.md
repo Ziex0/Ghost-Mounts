@@ -1,4 +1,4 @@
-# Ghost-Mount
+# Ghost-Mounts
 Core modification for TrinityCore, Tested on 3.3.5 branch.
 
 # About
@@ -8,7 +8,7 @@ There are 2 different patches
 
 2. ghost_flying_mount.patch which mounts you with a Winged Steed of the Ebon Blade (http://www.wowhead.com/npc=29582/winged-steed-of-the-ebon-blade)
 
-Note that upon ressurection you'll be back to normal speed, dismounted and flying state disabled.
+Note that upon resurrection you'll be back to normal speed, dismounted and flying state disabled.
 
 # How to install
 1. Go to your source root folder and place ghost_ground_mount.patch
