@@ -13,7 +13,7 @@ index f3d45b0..c29fb3b 100644
 +	SetUInt32Value(UNIT_FIELD_MOUNTDISPLAYID, GhostMount_DisplayID);
 +	SetSpeed(MOVE_RUN, 2.0f, true);
 +	SetCanFly(true);
-+	SetSpeed(MOVE_FLIGHT, 2.5f, true);
++	SetSpeed(MOVE_FLIGHT, 4.5f, true);
  
      // BG - remove insignia related
      RemoveFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_SKINNABLE);
