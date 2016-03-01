@@ -1,0 +1,27 @@
+diff --git a/src/server/game/Entities/Player/Player.cpp b/src/server/game/Entities/Player/Player.cpp
+index f3d45b0..a887911 100644
+--- a/src/server/game/Entities/Player/Player.cpp
++++ b/src/server/game/Entities/Player/Player.cpp
+@@ -4652,6 +4652,12 @@ void Player::BuildPlayerRepop()
+     SetMovement(MOVE_WATER_WALK);
+     if (!GetSession()->isLogingOut())
+         SetMovement(MOVE_UNROOT);
++	
++	//Ghost Ground Mount
++#define GhostMount_DisplayID	21974 //Swift Spectral Tiger
++
++	SetUInt32Value(UNIT_FIELD_MOUNTDISPLAYID, GhostMount_DisplayID);	
++	SetSpeed(MOVE_RUN, 2.0f, true);
+ 
+     // BG - remove insignia related
+     RemoveFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_SKINNABLE);
+@@ -4696,6 +4702,9 @@ void Player::ResurrectPlayer(float restore_percent, bool applySickness)
+ 
+     SetMovement(MOVE_LAND_WALK);
+     SetMovement(MOVE_UNROOT);
++	
++	//dismount upon resurrection
++	SetUInt32Value(UNIT_FIELD_MOUNTDISPLAYID, 0);
+ 
+     m_deathTimer = 0;
+ 
