@@ -2,13 +2,13 @@
 Core modification for TrinityCore, Tested on 3.3.5 branch.
 
 # About
-These are Core Modification Scripts that allows players to mount when they're dead.
+These are Core Modification Scripts that allow players to mount when they're dead.
 
 I made two different patches:
 
 1st patch - ghost_ground_mount which mounts you with a Swift Spectral Tiger when you're dead (http://www.wowhead.com/npc=24004/swift-spectral-tiger)
 
-2nd patch - ghost_flying_mount which mounts you with a Winged Steed of the Ebon Blade (http://www.wowhead.com/npc=29582/win...the-ebon-blade)
+2nd patch - ghost_flying_mount which mounts you with an Icebound Frostbrood Vanquisher (http://www.wowhead.com/npc=38695/icebound-frostbrood-vanquisher)
 
 Note that upon resurrection you'll be back to normal speed, dismounted and flying state disabled.
 
