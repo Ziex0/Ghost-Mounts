@@ -9,9 +9,10 @@ index f3d45b0..a887911 100644
 +	
 +	//Ghost Ground Mount
 +#define GhostMount_DisplayID	21974 //Swift Spectral Tiger
++#define Ground_Speed         2.0f // 100% ground mount speed   
 +
 +	SetUInt32Value(UNIT_FIELD_MOUNTDISPLAYID, GhostMount_DisplayID);	
-+	SetSpeed(MOVE_RUN, 2.0f, true);
++	SetSpeed(MOVE_RUN, Ground_Speed, true);
  
      // BG - remove insignia related
      RemoveFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_SKINNABLE);
