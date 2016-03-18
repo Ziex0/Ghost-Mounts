@@ -8,7 +8,7 @@ index f3d45b0..c29fb3b 100644
          SetMovement(MOVE_UNROOT);
 +	
 +    // Ghost Flying Mount
-+#define GhostMount_DisplayID	31154 // Icebound Frostbrood Vanquisher
++#define GhostMount_DisplayID	     31154 // Icebound Frostbrood Vanquisher
 +#define Flying_Speed			4.10f // 310% Flying Speed. You can edit to 3.80f = 280% flying speed
 +#define Ground_Speed			2.0f  // 100% Ground Speed
 +
