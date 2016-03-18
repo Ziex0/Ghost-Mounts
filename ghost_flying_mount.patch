@@ -7,13 +7,15 @@ index f3d45b0..c29fb3b 100644
      if (!GetSession()->isLogingOut())
          SetMovement(MOVE_UNROOT);
 +	
-+	// Ghost Flying Mount
-+#define GhostMount_DisplayID	28108 //Winged Steed of the Ebon Blade
++    // Ghost Flying Mount
++#define GhostMount_DisplayID	31154 // Icebound Frostbrood Vanquisher
++#define Flying_Speed			4.10f // 310% Flying Speed. You can edit to 3.80f = 280% flying speed
++#define Ground_Speed			2.0f  // 100% Ground Speed
 +
 +	SetUInt32Value(UNIT_FIELD_MOUNTDISPLAYID, GhostMount_DisplayID);
-+	SetSpeed(MOVE_RUN, 2.0f, true);
++	SetSpeed(MOVE_RUN, Ground_Speed, true); // Ground mount Speed
 +	SetCanFly(true);
-+	SetSpeed(MOVE_FLIGHT, 4.5f, true);
++	SetSpeed(MOVE_FLIGHT, Flying_Speed, true); // Flying mount Speed
  
      // BG - remove insignia related
      RemoveFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_SKINNABLE);
